@@ -1,3 +1,5 @@
+
+
 const TaskStatus = ({taskStatus, handleCompleteButton}) => {
 
   
@@ -28,6 +30,7 @@ const TaskStatus = ({taskStatus, handleCompleteButton}) => {
       }
     </div>
   )
+  
 };
 
 export default TaskStatus

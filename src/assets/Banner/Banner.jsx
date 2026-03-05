@@ -1,6 +1,6 @@
 // import { useState } from "react";
 
-const Banner = ({inProgress}) => {
+const Banner = ({inProgress, resloved}) => {
 
   return (
     <div className="flex flex-col md:flex-row justify-between gap-6 mt-20 text-white">
@@ -10,7 +10,7 @@ const Banner = ({inProgress}) => {
         </div>
         <div className="flex justify-center items-center flex-col bg-linear-to-r  from-[#54CF68] to-[#00827A] h-44 w-full rounded-md">
             <h2 className="text-xl mb-4">Resolved</h2>
-            <h1 className="text-xl font-semibold">0</h1>
+            <h1 className="text-xl font-semibold">{resloved}</h1>
         </div>
       
     </div>

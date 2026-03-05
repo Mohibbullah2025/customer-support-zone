@@ -17,13 +17,14 @@ const fetchIssues = async () => {
 function App() {
   const fetchPromise = fetchIssues()
   const [inProgress, setInprogress]=useState(0)
+  const [resloved, setResloved]=useState(0)
   return (
     <div>
     <Container>
       <Navbar></Navbar>
-      <Banner inProgress={inProgress}></Banner>
+      <Banner inProgress={inProgress} resloved={resloved}></Banner>
       <Suspense fallback="Loading">
-        <IssuesManagement fetchPromise={fetchPromise} inProgress={inProgress} setInprogress={setInprogress}></IssuesManagement>
+        <IssuesManagement resloved={resloved} setResloved={setResloved} fetchPromise={fetchPromise} inProgress={inProgress} setInprogress={setInprogress}></IssuesManagement>
       </Suspense>
     </Container>
     <Footer></Footer>

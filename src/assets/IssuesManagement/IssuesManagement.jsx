@@ -4,7 +4,8 @@ import TaskStatus from "../TaskStatus/TaskStatus";
 import { toast } from "react-toastify";
 
 
-const IssuesManagement = ({fetchPromise, setInprogress, inProgress}) => {
+
+const IssuesManagement = ({fetchPromise, setInprogress, inProgress, resloved, setResloved}) => {
     const initialData= use(fetchPromise);
     const [issues, setIssues]= useState(initialData)
     const [taskStatus, setTaskStatus]= useState([])
@@ -21,6 +22,7 @@ const IssuesManagement = ({fetchPromise, setInprogress, inProgress}) => {
       const updatedTaskStatus= taskStatus.filter((item)=>item.id !== issue.id);
       setTaskStatus(updatedTaskStatus)
       setInprogress(inProgress-1)
+      setResloved(resloved+1)
       toast.success(`Ticket "${issue.title}" remove from task status successfully!`);
     }
   return (
@@ -30,7 +32,7 @@ const IssuesManagement = ({fetchPromise, setInprogress, inProgress}) => {
         
       <IssueCard initialData={issues} handleSelectedIssue={handleSelectedIssue}></IssueCard>
       <TaskStatus taskStatus={taskStatus} handleCompleteButton={handleCompleteButton}></TaskStatus>
-    
+     
      </div>
      
   )
