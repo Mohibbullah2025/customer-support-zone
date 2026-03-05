@@ -1,16 +1,16 @@
-# React + Vite
+1/ What is JSX, and why is it used?
+JSX মানে হলো JavaScript XML . JSX দিয়ে খুব সহজে JavaScript এর মধ্যে HTML এর মতো করে code করা যাই। ফলে react apps এর ui বানানো খুব সহজ হয়ে যাই। 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2/ What is the difference between State and Props?
 
-Currently, two official plugins are available:
+State হলো কোনো component এর নিজের data যা ওই component থেকেই change করা যাই। আর props হলো parent থেকে child এ আসা data যা শুধুমাত্র parent থেকেই change করা যাই। 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3/ What is the useState hook, and how does it work?
+useState হুক হলো react এর একটি বহুলব্যবহ্রত hook. যা ব্যবহার করা হয় component এর state manage করার জন্য।
+ useState hook এ থাকে একটা state এবং একটা state set করার function. আর শুরুতে state এর একটা value দেওয়া থাকে। state set করার function দিয়ে state এর value change করতে হয়। 
 
-## React Compiler
+ 4/ How can you share state between components in React?
+React এ state এক components থেকে অন্য componets এ নিতে চাইলে প্রথমে state কে তাদের parent component এ নিতে হবে তার পর সেখান থেকে children হিসাবে অন্য component এ use করতে হবে। 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5/ How is event handling done in React?
+React এ event handling করা হয় camelCase event name ব্যবহার করে এবং function এর মাধ্যমে।

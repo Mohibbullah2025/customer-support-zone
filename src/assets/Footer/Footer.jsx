@@ -2,7 +2,7 @@
 const Footer = () => {
   return (
     <div className="bg-black">
-    <div className="max-w-11/12 mx-auto grid grid-cols-5 py-20 gap-6">
+    <div className="max-w-11/12 mx-auto grid grid-cols-1 md:grid-cols-5 py-20 gap-6">
       <div className="text-[#A1A1AA] list-none">
         <h2 className="text-white pb-4">CS — Ticket System</h2>
         <p>CS - Ticket System is a dynamic website.Here we slove your all issues related to our website.Tell us  about your problem. We are here to slove your problem.</p>
