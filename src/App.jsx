@@ -10,7 +10,7 @@ import { ToastContainer } from 'react-toastify'
 
 
 const fetchIssues = async () => {
-  const result = await fetch("/public/issues.json");
+  const result = await fetch("/issues.json");
   return result.json()
 
 }
