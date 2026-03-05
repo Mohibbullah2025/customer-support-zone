@@ -1,11 +1,11 @@
 
-const IssueCard = ({initialData}) => {
+const IssueCard = ({initialData, handleSelectedIssue}) => {
   return (
     <div className="mt-20"><h1 className="text-2xl font-semibold">Customer Tickets</h1>
     <div className=" grid grid-cols-1 md:grid-cols-2 gap-6 mb-20  mt-4">
       {
         initialData.map((issue=>{
-            return <div>
+            return <div key={issue.id} onClick={()=>handleSelectedIssue(issue)} className="cursor-pointer">
                 <div className="card card-dash bg-white shadow w-full min-h-56 p-4">
                 <div className="card-body px-0">
                 <div className="flex items-center justify-between">
