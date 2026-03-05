@@ -1,8 +1,7 @@
+const TaskStatus = ({taskStatus, handleCompleteButton}) => {
 
-const TaskStatus = ({selectedIssue}) => {
-  console.log(selectedIssue)
   
-  if(!selectedIssue){
+  if(taskStatus.length === 0){
     return(
       <div>
         <h2 className="mt-20 text-xl mb-10">Task Status</h2>
@@ -13,10 +12,20 @@ const TaskStatus = ({selectedIssue}) => {
   return(
     <div>
       <h2 className="mt-20 text-xl mb-10">Task Status</h2>
-      <div>
-        <h3 className="font-semibold">{selectedIssue.title}</h3>
-        <button className="btn btn-success w-full mt-4">Complete</button>
-      </div>
+     {
+        taskStatus.map((issue) => (
+          <div key={issue.id} className="mb-4 p-4 shadow rounded bg-white">
+            <h3 className="font-semibold">{issue.title}</h3>
+
+            <button
+              onClick={() => handleCompleteButton(issue)}
+              className="btn btn-success w-full mt-4"
+            >
+              Complete
+            </button>
+          </div>
+        ))
+      }
     </div>
   )
 };

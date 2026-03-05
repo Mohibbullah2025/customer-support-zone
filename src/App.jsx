@@ -1,11 +1,12 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './assets/Banner/Banner'
 import Container from './assets/Container/Container'
 import IssuesManagement from './assets/IssuesManagement/IssuesManagement'
 import Navbar from './Navbar/Navbar'
 import Footer from './assets/Footer/Footer'
+import { ToastContainer } from 'react-toastify'
 
 
 const fetchIssues = async () => {
@@ -15,17 +16,18 @@ const fetchIssues = async () => {
 }
 function App() {
   const fetchPromise = fetchIssues()
+  const [inProgress, setInprogress]=useState(0)
   return (
     <div>
     <Container>
       <Navbar></Navbar>
-      <Banner></Banner>
+      <Banner inProgress={inProgress}></Banner>
       <Suspense fallback="Loading">
-        <IssuesManagement fetchPromise={fetchPromise}></IssuesManagement>
+        <IssuesManagement fetchPromise={fetchPromise} inProgress={inProgress} setInprogress={setInprogress}></IssuesManagement>
       </Suspense>
     </Container>
     <Footer></Footer>
-    
+    <ToastContainer></ToastContainer>
    </div>
    
  
