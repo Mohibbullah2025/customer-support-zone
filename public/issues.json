@@ -1,0 +1,110 @@
+[
+  {
+    "id": "#1001",
+    "title": "Login page not loading",
+    "description": "Users are unable to access the login page after clicking the login button.",
+    "customer": "Rahim Uddin",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "3/1/2026"
+  },
+  {
+    "id": "#1002",
+    "title": "Payment gateway timeout",
+    "description": "Payment process fails due to timeout error during checkout.",
+    "customer": "Nusrat Jahan",
+    "priority": "High",
+    "status": "In-Progress",
+    "createdAt": "3/2/2026"
+  },
+  {
+    "id": "#1003",
+    "title": "Password reset email not sent",
+    "description": "Customers are not receiving password reset emails.",
+    "customer": "Imran Hossain",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "3/3/2026"
+  },
+  {
+    "id": "#1004",
+    "title": "Dashboard data mismatch",
+    "description": "Displayed dashboard statistics do not match database values.",
+    "customer": "Sadia Akter",
+    "priority": "High",
+    "status": "In-Progress",
+    "createdAt": "3/3/2026"
+  },
+  {
+    "id": "#1005",
+    "title": "Mobile navbar breaking",
+    "description": "Navbar items move to second line on medium devices.",
+    "customer": "Tanvir Hasan",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "3/4/2026"
+  },
+  {
+    "id": "#1006",
+    "title": "File upload failed",
+    "description": "Users cannot upload profile pictures larger than 2MB.",
+    "customer": "Mithila Rahman",
+    "priority": "Medium",
+    "status": "In-Progress",
+    "createdAt": "3/4/2026"
+  },
+  {
+    "id": "#1007",
+    "title": "Search not returning results",
+    "description": "Search functionality does not return expected results.",
+    "customer": "Arif Chowdhury",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "3/5/2026"
+  },
+  {
+    "id": "#1008",
+    "title": "Email notification delay",
+    "description": "System email notifications are delayed by several minutes.",
+    "customer": "Farzana Karim",
+    "priority": "Low",
+    "status": "In-Progress",
+    "createdAt": "3/5/2026"
+  },
+  {
+    "id": "#1009",
+    "title": "Profile update error",
+    "description": "Users receive an error while updating their profile information.",
+    "customer": "Shakil Ahmed",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "3/5/2026"
+  },
+  {
+    "id": "#1010",
+    "title": "Session expires too quickly",
+    "description": "User sessions expire within 5 minutes of inactivity.",
+    "customer": "Tania Sultana",
+    "priority": "High",
+    "status": "In-Progress",
+    "createdAt": "3/6/2026"
+  },
+  {
+    "id": "#1011",
+    "title": "Broken link on homepage",
+    "description": "The 'Learn More' button redirects to a 404 page.",
+    "customer": "Mahmudul Islam",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "3/6/2026"
+  },
+  {
+    "id": "#1012",
+    "title": "Slow loading reports page",
+    "description": "Reports page takes more than 10 seconds to load.",
+    "customer": "Sumaiya Akter",
+    "priority": "Medium",
+    "status": "In-Progress",
+    "createdAt": "3/7/2026"
+  }
+]

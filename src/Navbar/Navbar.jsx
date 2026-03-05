@@ -1,7 +1,7 @@
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar px-0 flex-nowrap shadow bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -9,29 +9,29 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex="-1"
-        className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2">
+        className="menu menu-sm dropdown-content rounded-box z-10 mt-3 overflow-hidden pb-4 w-40 p-2">
         <li><a>Home</a></li>
         <li><a>FAQ</a></li>
         <li><a>Changelog</a></li>
         <li><a>Blog</a></li>
         <li><a>Download</a></li>
         <li><a>Contact</a></li>
-        <li className="btn btn-ghost bg-linear-to-r from-[#422AD5] to-[#594ea1] text-[#320cda]">+ New Ticket</li>
+        <li className="btn btn-ghost bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white">+ New Ticket</li>
     </ul>
     </div>
-    <a className="btn btn-ghost text-xl">CS — Ticket System</a>
+    <a className="btn btn-ghost text-xl p-0">CS — Ticket System</a>
   </div>
-  <div className="navbar-end hidden md:block">
-     <ul className="menu menu-horizontal px-5 items-center">
+  <div className="navbar-end hidden md:flex items-center gap-4 ">
+     <ul className="menu menu-horizontal items-center">
       <li><a>Home</a></li>
       <li><a>FAQ</a></li>
       <li><a>Changelog</a></li>
       <li><a>Blog</a></li>
       <li><a>Download</a></li>
       <li><a>Contact</a></li>
-      <li className="btn btn-ghost bg-blue-700 bg-linear-to-r from-[#422AD5] to-[#594ea1] text-[#320cda]">+ New Ticket</li>
     </ul>
-    
+    <button className="btn btn-ghost bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white">+New Ticket</button>
+  
   </div>
 </div>
   )
